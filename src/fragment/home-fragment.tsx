@@ -1,14 +1,22 @@
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import AuthLayout from "@/layout/auth-layout";
 import Image from "next/image";
-import myLogo from '../../public/image/logo.png'
+import myLogo from "../../public/image/logo.png";
 
 const HomeFragment = () => {
   return (
     <>
-      <AuthLayout className="bg-background pt-52 h-screen md:pt-56 lg:pt-52 z-20">
+      <AuthLayout
+        className="bg-background pt-52 h-screen md:pt-56 lg:pt-52 z-20"
+        id="home"
+      >
         <h3 className="font-mono font-bold text-xl mb-4 md:font-semibold xl:text-xl text-secondary-foreground flex items-end gap-1">
-          <Image src={myLogo} alt="logo" className="w-6 h-6 md:w-7 md:h-7 lg:w-6 lg:h-6 xl:w-7 xl:h-7" priority={true} />
+          <Image
+            src={myLogo}
+            alt="logo"
+            className="w-6 h-6 md:w-7 md:h-7 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+            priority={true}
+          />
           <span>FajarVerse</span>
         </h3>
         <h1 className="font-anton font-extrabold text-5xl md:text-6xl lg:text-[3.4rem] xl:text-7xl xl:tracking-tight 2xl:text-[4.7rem]">

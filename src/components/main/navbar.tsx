@@ -9,9 +9,9 @@ import { TextAnimate } from "../ui/text-animate";
 import myLogo from "../../../public/image/logo.png";
 
 const menuItems = [
-  { label: "Home", url: "/" },
-  { label: "About", url: "/about" },
-  { label: "Projects", url: "/projects" },
+  { label: "Home", url: "#home" },
+  { label: "About", url: "#about" },
+  { label: "Projects", url: "#projects" },
   { label: "Contact", url: "/contact" },
 ];
 

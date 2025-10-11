@@ -4,7 +4,10 @@ import AboutStack from "./about-stack";
 
 const AboutFragment = () => {
   return (
-    <AuthLayout className="pt-32 md:pt-36 lg:pt-32 xl:pt-36 xl:px-44">
+    <AuthLayout
+      className="pt-24 md:pt-36 lg:pt-32 xl:pt-36 xl:px-44"
+      id="about"
+    >
       <AboutBody />
       <AboutStack />
     </AuthLayout>

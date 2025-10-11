@@ -1,7 +1,7 @@
 import AboutFragment from "@/fragment/about/about-fragment";
 
-const AboutPage = () => {
+const About = () => {
   return <AboutFragment />;
 };
 
-export default AboutPage;
+export default About;
