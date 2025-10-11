@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -7,11 +7,13 @@ import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { TextAlignJustify, X } from "lucide-react";
 import { TextAnimate } from "../ui/text-animate";
 import myLogo from "../../../public/image/logo.png";
+import { label } from "motion/react-client";
 
 const menuItems = [
   { label: "Home", url: "#home" },
   { label: "About", url: "#about" },
   { label: "Projects", url: "#projects" },
+  { label: "Experience", url: "#experience" },
   { label: "Contact", url: "/contact" },
 ];
 
