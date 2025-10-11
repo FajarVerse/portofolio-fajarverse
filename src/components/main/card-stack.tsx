@@ -12,8 +12,6 @@ interface CardStackProps {
 const CardStack = ({ name, color, icon }: CardStackProps) => {
   const [isHover, setIsHover] = useState(false);
 
-  console.log(isHover);
-
   return (
     <>
       <div
