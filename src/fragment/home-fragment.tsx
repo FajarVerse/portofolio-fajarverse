@@ -19,7 +19,7 @@ const HomeFragment = () => {
           />
           <span>FajarVerse</span>
         </h3>
-        <h1 className="font-anton font-extrabold text-5xl md:text-6xl lg:text-[3.4rem] xl:text-7xl xl:tracking-tight 2xl:text-[4.7rem]">
+        <h1 className="font-anton font-extrabold text-5xl md:text-6xl lg:text-[3.4rem] xl:text-7xl xl:tracking-wide 2xl:text-[4.7rem]">
           GIFARI FAJAR MAULANA
         </h1>
         <h2 className="font-anton font-bold text-xl mt-1 mb-4 md:mt-1.5 lg:tracking-wide lg:text-2xl xl:text-[2rem] xl:mb-7 2xl:mb-9">
