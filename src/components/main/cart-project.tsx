@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Clock, Github, Play } from "lucide-react";
 import Link from "next/link";
@@ -60,7 +60,7 @@ const CardRightContent = ({
               {children}
             </p>
           </div>
-          <div className="w-full mt-3 flex gap-2.5 md:mt-3.5 md:gap-3.5 lg:mt-3 lg:gap-2.5 xl:gap-3 xl:mt-3.5">
+          <div className="w-full mt-3 flex gap-2.5 md:mt-3.5 md:gap-3.5 lg:mt-3 lg:gap-2.5 xl:gap-3 xl:mt-3.5 flex-wrap">
             {stacks.length > 0 &&
               stacks.map((stack, i) => (
                 <BtnCard
@@ -79,7 +79,7 @@ const CardRightContent = ({
               <Link href={liveStatus ? liveUrl : "#"} target="_blank">
                 <BtnCard className="py-2 bg-primary text-background hover:bg-background hover:text-primary flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Play className="size-4 xl:size-5" />
-                  {liveStatus ? "Live" : "Preview not available"}
+                  {liveStatus ? "Live" : "Not available"}
                 </BtnCard>
               </Link>
               <Link href={repoStatus ? repoUrl : "#"} target="_blank">
