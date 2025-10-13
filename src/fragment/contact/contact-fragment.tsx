@@ -1,15 +1,11 @@
-import BtnCard from "@/components/main/btn-card";
 import Header from "@/components/main/header";
 import Paragraph from "@/components/main/paragraph";
 import AuthLayout from "@/layout/auth-layout";
-import { Linkedin, LucideIcon } from "lucide-react";
-import Link from "next/link";
-import { siGmail, siInstagram, SimpleIcon, siWhatsapp } from "simple-icons";
 import Contacts from "./contacts";
 
 const ContactFragment = () => {
   return (
-    <AuthLayout className="pt-32 pb-28 xl:pt-36 xl:pb-32">
+    <AuthLayout className="pt-32 pb-28 xl:pt-36 xl:pb-32" id="contact">
       <Header className="text-center">Lets Connect</Header>
       <div className="w-full mt-3">
         <Paragraph className="text-muted text-center">
