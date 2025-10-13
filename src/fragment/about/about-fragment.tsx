@@ -1,3 +1,5 @@
+"use client";
+
 import AuthLayout from "@/layout/auth-layout";
 import AboutBody from "./about-body";
 import AboutStack from "./about-stack";

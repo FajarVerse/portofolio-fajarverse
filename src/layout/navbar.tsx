@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import Image from "next/image";
 import Link from "next/link";

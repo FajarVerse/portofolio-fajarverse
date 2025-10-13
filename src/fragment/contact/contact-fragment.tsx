@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/main/header";
 import Paragraph from "@/components/main/paragraph";
 import AuthLayout from "@/layout/auth-layout";

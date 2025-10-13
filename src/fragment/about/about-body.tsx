@@ -1,6 +1,7 @@
+"use client";
+
 import Header from "@/components/main/header";
 import Paragraph from "@/components/main/paragraph";
-import ScrambledText from "@/components/ScrambledText";
 import { BlurFade } from "@/components/ui/blur-fade";
 
 const AboutBody = () => {
@@ -9,7 +10,7 @@ const AboutBody = () => {
       <BlurFade inView={true} direction="down" offset={10} duration={0.5}>
         <Header>About Me</Header>
       </BlurFade>
-      <BlurFade inView={true} direction={'right'} offset={10} duration={0.5}>
+      <BlurFade inView={true} direction={"right"} offset={10} duration={0.5}>
         <div className="w-full mt-4 lg:mt-5 xl:mt-7">
           <Paragraph>
             Hi, I'm Gifari Fajar Maulana, a

@@ -1,3 +1,5 @@
+"use client";
+
 import CardStack from "@/components/main/card-stack";
 import SubHeader from "@/components/main/sub-header";
 import { BlurFade } from "@/components/ui/blur-fade";

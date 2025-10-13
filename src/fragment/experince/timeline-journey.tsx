@@ -1,3 +1,5 @@
+'use client';
+
 import { Timeline } from "@/components/ui/timeline";
 import { TimelineEntry } from "./experince-fragment";
 

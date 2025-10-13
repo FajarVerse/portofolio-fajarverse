@@ -1,3 +1,5 @@
+'use client';
+
 import Header from "@/components/main/header";
 import AuthLayout from "@/layout/auth-layout";
 import TimelineJourney from "./timeline-journey";

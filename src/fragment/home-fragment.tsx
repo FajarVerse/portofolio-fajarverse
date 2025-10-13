@@ -1,12 +1,12 @@
-import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
-import AuthLayout from "@/layout/auth-layout";
-import Image from "next/image";
-import myLogo from "../../public/image/logo.png";
+"use client";
+
+import { BlurFade } from "@/components/ui/blur-fade";
 import { HyperText } from "@/components/ui/hyper-text";
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { TypingAnimation } from "@/components/ui/typing-animation";
+import AuthLayout from "@/layout/auth-layout";
 import Link from "next/link";
-import { BlurFade } from "@/components/ui/blur-fade";
 
 const HomeFragment = () => {
   return (

@@ -1,3 +1,5 @@
+'use client';
+
 import CardProject from "@/components/main/cart-project";
 import Header from "@/components/main/header";
 import AuthLayout from "@/layout/auth-layout";

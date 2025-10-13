@@ -1,3 +1,5 @@
+"use client";
+
 import BtnCard from "@/components/main/btn-card";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Linkedin } from "lucide-react";
