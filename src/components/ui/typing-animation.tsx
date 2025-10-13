@@ -6,7 +6,7 @@ import { motion, MotionProps, useInView } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface TypingAnimationProps extends MotionProps {
-  children?: string | React.ReactNode;
+  children?: string;
   words?: string[];
   className?: string;
   duration?: number;
@@ -78,7 +78,9 @@ export function TypingAnimation({
 
     const timeout = setTimeout(() => {
       const currentWord = wordsToAnimate[currentWordIndex] || "";
-      const graphemes = Array.from(currentWord);
+      const graphemes = Array.from(
+        typeof currentWord === "string" ? currentWord : String(currentWord)
+      );
 
       switch (phase) {
         case "typing":
