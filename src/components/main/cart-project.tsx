@@ -17,6 +17,8 @@ interface CardRightContent {
   liveUrl: string;
   repoUrl: string;
   status: boolean;
+  liveStatus?: boolean;
+  repoStatus?: boolean;
 }
 
 const CardProject = ({ children }: CardProjectProps) => {
@@ -28,7 +30,7 @@ const CardProject = ({ children }: CardProjectProps) => {
 const CardLeftContent = ({ image }: CardLeftContent) => {
   return (
     <div
-      className="w-full h-64 bg-cover bg-center md:h-96 lg:w-1/2 lg:h-64 xl:h-72 2xl:h-80"
+      className="w-full h-64 bg-cover bg-center md:h-96 lg:w-1/2 lg:h-64 xl:h-72 2xl:h-80 border-2 border-muted-foreground"
       style={{ backgroundImage: `url(${image})` }}
     ></div>
   );
@@ -41,6 +43,8 @@ const CardRightContent = ({
   liveUrl,
   repoUrl,
   status,
+  liveStatus,
+  repoStatus,
 }: CardRightContent) => {
   return (
     <>
@@ -70,16 +74,16 @@ const CardRightContent = ({
         <div className="w-full">
           {status ? (
             <div className="w-full mt-4 flex gap-2.5 md:mt-6 md:gap-3.5 lg:gap-2.5 xl:gap-3.5">
-              <Link href={liveUrl}>
+              <Link href={liveStatus ? liveUrl : "#"}>
                 <BtnCard className="py-2 bg-primary text-background hover:bg-background hover:text-primary flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Play className="size-4 xl:size-5" />
-                  Live Preview
+                  {liveStatus ? "Live" : "Preview not available"}
                 </BtnCard>
               </Link>
               <Link href={repoUrl}>
                 <BtnCard className="py-2 bg-background text-primary hover:bg-primary hover:text-background flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Github className="size-4 xl:size-5" />
-                  Repository
+                  {repoStatus ? "Github" : "Repo is private"}
                 </BtnCard>
               </Link>
             </div>

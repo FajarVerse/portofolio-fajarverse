@@ -1,7 +1,17 @@
 import CardStack from "@/components/main/card-stack";
 import SubHeader from "@/components/main/sub-header";
+import { BlurFade } from "@/components/ui/blur-fade";
 import { Marquee } from "@/components/ui/marquee";
-import { siCss, siHtml5, siJavascript, siLaravel, SimpleIcon, siReact, siTailwindcss, siTypescript } from "simple-icons";
+import {
+  siCss,
+  siHtml5,
+  siJavascript,
+  siLaravel,
+  SimpleIcon,
+  siReact,
+  siTailwindcss,
+  siTypescript,
+} from "simple-icons";
 
 type Stack = {
   name: string;
@@ -50,24 +60,26 @@ const stacks: Stack[] = [
 const AboutStack = () => {
   return (
     <>
-      <div className="w-full mt-3 lg:mt-5 xl:mt-8">
-        <SubHeader>Tech Stack</SubHeader>
-        <div className="w-full mt-3 xl:mt-4 relative">
-          <Marquee pauseOnHover className="[--duration:5s]">
-            {stacks.length > 0 &&
-              stacks.map((stack, i) => (
-                <CardStack
-                  key={i}
-                  name={stack.name}
-                  color={stack.color}
-                  icon={stack.icon}
-                />
-              ))}
-          </Marquee>
-          <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-          <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+      <BlurFade inView={true} direction={"up"} offset={10} duration={0.5}>
+        <div className="w-full mt-3 lg:mt-5 xl:mt-8">
+          <SubHeader>Tech Stack</SubHeader>
+          <div className="w-full mt-3 xl:mt-4 relative">
+            <Marquee pauseOnHover className="[--duration:5s]">
+              {stacks.length > 0 &&
+                stacks.map((stack, i) => (
+                  <CardStack
+                    key={i}
+                    name={stack.name}
+                    color={stack.color}
+                    icon={stack.icon}
+                  />
+                ))}
+            </Marquee>
+            <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+            <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+          </div>
         </div>
-      </div>
+      </BlurFade>
     </>
   );
 };
