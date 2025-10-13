@@ -74,13 +74,13 @@ const CardRightContent = ({
         <div className="w-full">
           {status ? (
             <div className="w-full mt-4 flex gap-2.5 md:mt-6 md:gap-3.5 lg:gap-2.5 xl:gap-3.5">
-              <Link href={liveStatus ? liveUrl : "#"}>
+              <Link href={liveStatus ? liveUrl : "#"} target="_blank">
                 <BtnCard className="py-2 bg-primary text-background hover:bg-background hover:text-primary flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Play className="size-4 xl:size-5" />
                   {liveStatus ? "Live" : "Preview not available"}
                 </BtnCard>
               </Link>
-              <Link href={repoUrl}>
+              <Link href={repoStatus ? repoUrl : "#"} target="_blank">
                 <BtnCard className="py-2 bg-background text-primary hover:bg-primary hover:text-background flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Github className="size-4 xl:size-5" />
                   {repoStatus ? "Github" : "Repo is private"}

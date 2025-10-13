@@ -8,9 +8,9 @@ const projects = [
   {
     id: 1,
     title: "Lugi Store (Eccommerce Fashion)",
-    stacks: ["React.js", "laravel", "Tailwind CSS", "Midtrans"],
+    stacks: ["React.js", "Laravel", "Tailwind CSS", "Midtrans"],
     liveUrl: null,
-    repoUrl: null,
+    repoUrl: "https://github.com/FajarVerse/fashion_e_commerce.git",
     status: true,
     image: project1.src,
     liveStatus: false,
