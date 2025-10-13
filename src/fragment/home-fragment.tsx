@@ -12,7 +12,7 @@ const HomeFragment = () => {
   return (
     <>
       <AuthLayout
-        className="bg-background pt-52 h-screen md:pt-56 lg:pt-52 z-20"
+        className="bg-background pt-36 h-screen md:pt-56 lg:pt-52 z-20"
         id="home"
       >
         <TextAnimate
