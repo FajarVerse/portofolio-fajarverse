@@ -1,3 +1,5 @@
+'use client';
+
 interface SubHeaderProps {
   children: React.ReactNode;
   className?: string;

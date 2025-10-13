@@ -1,3 +1,5 @@
+'use client';
+
 interface HeaderProps {
   children: React.ReactNode;
   className?: string;

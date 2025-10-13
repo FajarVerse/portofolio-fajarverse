@@ -1,3 +1,5 @@
+'use client';
+
 import { Clock, Github, Play } from "lucide-react";
 import Link from "next/link";
 import BtnCard from "./btn-card";
