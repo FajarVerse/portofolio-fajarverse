@@ -1,6 +1,7 @@
 "use client";
 
-import Navbar from "@/components/main/navbar";
+import Footer from "@/layout/footer";
+import Navbar from "@/layout/navbar";
 import About from "@/page/about";
 import Contact from "@/page/contact";
 import Experience from "@/page/experince";
@@ -16,6 +17,7 @@ export default function Page() {
       <Project />
       <Experience />
       <Contact />
+      <Footer />
     </>
   );
 }

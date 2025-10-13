@@ -1,23 +1,26 @@
-"use client";
-
-import { TextAlignJustify, X } from "lucide-react";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import myLogo from "../../../public/image/logo.png";
-import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
-import { TextAnimate } from "../ui/text-animate";
+import myLogo from "../../public/image/logo.png";
+import { TextAlignJustify, X } from "lucide-react";
+import { TextAnimate } from "@/components/ui/text-animate";
 
-const menuItems = [
-  { label: "Home", url: "#home" },
-  { label: "About", url: "#about" },
-  { label: "Projects", url: "#projects" },
-  { label: "Experience", url: "#experience" },
-  { label: "Contact", url: "#contact" },
-];
+type MenuItem = {
+  label: string;
+  url: string;
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const menuItems: MenuItem[] = [
+    { label: "Home", url: "#home" },
+    { label: "About", url: "#about" },
+    { label: "Projects", url: "#projects" },
+    { label: "Experience", url: "#experience" },
+    { label: "Contact", url: "#contact" },
+  ];
 
   return (
     <>
