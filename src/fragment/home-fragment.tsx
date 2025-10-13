@@ -25,17 +25,16 @@ const HomeFragment = () => {
           FajarVerse
         </TextAnimate>
 
-        {/* <h1 className="font-anton font-extrabold text-5xl tracking-wide md:text-6xl lg:text-[3.4rem] xl:text-7xl xl:tracking-wider 2xl:text-[4.7rem]"> */}
         <HyperText
           startOnView={true}
           animateOnHover={false}
           duration={1000}
-          className="font-anton font-extrabold text-5xl md:text-6xl lg:text-[3.4rem] xl:text-7xl 2xl:text-[4.8rem]"
+          className="font-anton font-extrabold text-5xl md:text-6xl lg:text-[3.4rem] xl:text-7xl 2xl:text-[4.8rem] lg:tracking-wider"
         >
           GIFARI FAJAR MAULANA
         </HyperText>
-        {/* </h1> */}
-        <h2 className="font-anton font-bold text-xl mt-1 mb-4 md:mt-1.5 lg:tracking-wide lg:text-2xl xl:text-[2rem] xl:mb-7 2xl:mb-9">
+
+        <h2 className="font-anton font-bold text-xl mt-1 mb-4 md:mt-1.5 lg:text-2xl xl:text-[2rem] xl:mb-7 2xl:mb-9 lg:tracking-wider">
           <TypingAnimation
             duration={500}
             startOnView={true}
@@ -44,9 +43,9 @@ const HomeFragment = () => {
             cursorStyle={"underscore"}
             typeSpeed={50}
             showCursor={false}
-            className="relative before:block before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-1 before:bg-primary"
+            className="relative before:block before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-1 before:bg-primary lg:tracking-wider"
           >
-            Fullstack
+            FULLSTACK
           </TypingAnimation>{" "}
           <TypingAnimation
             duration={500}
@@ -57,8 +56,9 @@ const HomeFragment = () => {
             typeSpeed={50}
             delay={500}
             showCursor={false}
+            className="lg:tracking-wider"
           >
-            Developer
+            DEVELOPER
           </TypingAnimation>
         </h2>
         <div className="w-full md:w-3/4 lg:w-3/5 xl:w-3/4">
