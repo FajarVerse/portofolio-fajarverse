@@ -13,7 +13,7 @@ const AboutBody = () => {
       <BlurFade inView={true} direction={"right"} offset={10} duration={0.5}>
         <div className="w-full mt-4 lg:mt-5 xl:mt-7">
           <Paragraph>
-            Hi, I'm Gifari Fajar Maulana, a
+            Hi, I'm Gifari Fajar Maulana, a{" "}
             <span className="text-primary">
               fullstack developer an front-end developer
             </span>{" "}

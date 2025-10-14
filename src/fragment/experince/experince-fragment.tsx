@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Header from "@/components/main/header";
 import AuthLayout from "@/layout/auth-layout";
@@ -28,11 +28,11 @@ const ExperienceFragment = () => {
               contributed to the development of Booking and Admin Panels using
               React.js and Tailwind CSS with Git-based collaboration.
             </p>
-            <div className="w-full grid grid-cols-2 gap-2.5 mt-3 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
+            <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
                 src={experienceImag1}
                 alt={"Sertifikat Digital Hero"}
-                className="w-full h-32 bg-primary xl:h-44 2xl:h-52 border-2 border-muted-foreground"
+                className="w-full h-44 bg-primary xl:h-44 2xl:h-52 border-2 border-muted-foreground"
               />
             </div>
           </div>

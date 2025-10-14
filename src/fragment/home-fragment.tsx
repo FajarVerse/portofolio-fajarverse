@@ -34,7 +34,7 @@ const HomeFragment = () => {
           GIFARI FAJAR MAULANA
         </HyperText>
 
-        <h2 className="font-anton font-bold text-xl mt-1 mb-4 md:mt-1.5 lg:text-2xl xl:text-[2rem] xl:mb-7 2xl:mb-9 lg:tracking-wider">
+        <h2 className="font-anton font-bold text-xl tracking-wide mt-1 mb-4 md:mt-1.5 lg:text-2xl xl:text-[2rem] xl:mb-7 2xl:mb-9 lg:tracking-wider">
           <TypingAnimation
             duration={500}
             startOnView={true}
