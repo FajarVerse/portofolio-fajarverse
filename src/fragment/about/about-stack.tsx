@@ -10,6 +10,7 @@ import {
   siJavascript,
   siLaravel,
   SimpleIcon,
+  siMysql,
   siReact,
   siTailwindcss,
   siTypescript,
@@ -57,12 +58,17 @@ const stacks: Stack[] = [
     color: "#FF2D20",
     icon: siLaravel,
   },
+  {
+    name: "MySQL",
+    color: "#4479A1",
+    icon: siMysql,
+  },
 ];
 
 const AboutStack = () => {
   return (
     <>
-      <BlurFade inView={true} direction={"up"} offset={10} duration={0.5}>
+      <BlurFade inView={true} direction={"up"} offset={10} duration={1}>
         <div className="w-full mt-3 lg:mt-5 xl:mt-8">
           <SubHeader>Tech Stack</SubHeader>
           <div className="w-full mt-3 xl:mt-4 relative">
