@@ -4,6 +4,7 @@ import CardStack from "@/components/main/card-stack";
 import SubHeader from "@/components/main/sub-header";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { Marquee } from "@/components/ui/marquee";
+import { useTranslations } from "next-intl";
 import {
   siCss,
   siHtml5,
@@ -66,11 +67,13 @@ const stacks: Stack[] = [
 ];
 
 const AboutStack = () => {
+  const t = useTranslations("AboutSection");
+
   return (
     <>
       <BlurFade inView={true} direction={"up"} offset={10} duration={1}>
         <div className="w-full mt-3 lg:mt-5 xl:mt-8">
-          <SubHeader>Tech Stack</SubHeader>
+          <SubHeader>{t("subTitle")}</SubHeader>
           <div className="w-full mt-3 xl:mt-4 relative">
             <Marquee pauseOnHover className="[--duration:5s]">
               {stacks.length > 0 &&

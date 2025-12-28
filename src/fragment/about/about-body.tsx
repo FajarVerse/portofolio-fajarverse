@@ -3,17 +3,25 @@
 import Header from "@/components/main/header";
 import Paragraph from "@/components/main/paragraph";
 import { BlurFade } from "@/components/ui/blur-fade";
+import { useTranslations } from "next-intl";
 
 const AboutBody = () => {
+  const t = useTranslations("AboutSection");
+
   return (
     <>
       <BlurFade inView={true} direction="down" offset={10} duration={0.5}>
-        <Header>About Me</Header>
+        <Header>{t("title")}</Header>
       </BlurFade>
       <BlurFade inView={true} direction={"right"} offset={10} duration={0.5}>
         <div className="w-full mt-4 lg:mt-5 xl:mt-7">
           <Paragraph>
-            Hi, I'm Gifari Fajar Maulana, a{" "}
+            {t.rich("firstParagraph", {
+              highlight: (chunks) => (
+                <span className="text-primary">{chunks}</span>
+              ),
+            })}
+            {/* Hi, I'm Gifari Fajar Maulana, a{" "}
             <span className="text-primary">
               fullstack developer an front-end developer
             </span>{" "}
@@ -25,11 +33,16 @@ const AboutBody = () => {
             focusing on both front-end and back-end development to create{" "}
             <span className="text-primary">
               meaningful digital experiences.
-            </span>
+            </span> */}
           </Paragraph>
 
           <Paragraph className="mt-3 xl:mt-5">
-            I’m deeply passionate about{" "}
+            {t.rich("secondParagraph", {
+              highlight: (chunks) => (
+                <span className="text-primary">{chunks}</span>
+              ),
+            })}
+            {/* I’m deeply passionate about{" "}
             <span className="text-primary">continuous learnin</span>g and
             staying updated with the{" "}
             <span className="text-primary">latest technologies</span>. Each
@@ -37,10 +50,15 @@ const AboutBody = () => {
             <span className="text-primary">creative ideas</span>, sharpen my{" "}
             <span className="text-primary">technical skills</span>, and deliver{" "}
             <span className="text-primary">effective solutions</span> to
-            real-world challenges in the digital space.
+            real-world challenges in the digital space. */}
           </Paragraph>
           <Paragraph className="mt-3 xl:mt-5">
-            Beyond functionality, I also focus on{" "}
+            {t.rich("thirdParagraph", {
+              highlight: (chunks) => (
+                <span className="text-primary">{chunks}</span>
+              ),
+            })}
+            {/* Beyond functionality, I also focus on{" "}
             <span className="text-primary">
               design and user experience (UI/UX)
             </span>{" "}
@@ -50,7 +68,7 @@ const AboutBody = () => {
             <span className="text-primary">
               bridge between ideas and meaningful
             </span>{" "}
-            impact for people.
+            impact for people. */}
           </Paragraph>
         </div>
       </BlurFade>

@@ -1,0 +1,21 @@
+{
+  "HeroSection": {
+    "tagLine": "Di mana ide bertemu inovasi — menciptakan produk digital yang fungsional, bernilai, dan berdampak jangka panjang..",
+    "btnMyWork": "Eksplor karya saya",
+    "btnContact": "Kontak saya"
+  },
+
+  "AboutSection": {
+    "title": "Tentang Saya",
+    "firstParagraph": "Hai, saya Gifari Fajar Maulana, seorang <highlight>fullstack developer dan front-end developer</highlight> yang berfokus pada pengembangan aplikasi web <highlight>modern, interaktif, dan responsif</highlight>. Saat ini saya menempuh pendidikan di Politeknik LP3I Jakarta, dengan fokus pada pengembangan front-end dan back-end untuk menciptakan <highlight>pengalaman digital yang bermakna</highlight>.",
+    "secondParagraph": "Saya memiliki passion yang kuat terhadap <highlight>pembelajaran berkelanjutan</highlight> dan selalu mengikuti <highlight>teknologi terbaru</highlight>. Setiap proyek yang saya kerjakan menjadi kesempatan untuk mengeksplorasi <highlight>ide kreatif</highlight>, mengasah <highlight>kemampuan teknis</highlight>, serta menghadirkan <highlight>solusi yang efektif</highlight> untuk menjawab tantangan nyata di ranah digital.",
+    "thirdParagraph": "Selain fungsionalitas, saya juga menaruh perhatian besar pada <highlight>desain dan pengalaman pengguna (UI/UX)</highlight> untuk memastikan setiap produk digital yang saya bangun tidak hanya efisien, tetapi juga <highlight>menarik dan intuitif</highlight> untuk digunakan. Saya percaya teknologi bukan sekadar alat, melainkan sebuah <highlight>jembatan antara ide dan dampak yang bermakna</highlight> bagi banyak orang.",
+    "subTitle": "Teknologi & Tools"
+  },
+
+  "ContactSection": {
+    "title": "Mari Terhubung",
+    "firstDescription": "Mari wujudkan sesuatu yang luar biasa bersama.",
+    "secondDescription": "Setiap proyek hebat berawal dari percakapan sederhana — mari mulai percakapan kita."
+  }
+}

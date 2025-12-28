@@ -1,0 +1,21 @@
+{
+  "HeroSection": {
+    "tagLine": "Where ideas meet innovation — creating digital products that not only work, but provide long-term value and impact.",
+    "btnMyWork": "See my works",
+    "btnContact": "Contact me"
+  },
+
+  "AboutSection": {
+    "title": "About Me",
+    "firstParagraph": "Hi, I'm Gifari Fajar Maulana, a <highlight>fullstack developer and front-end developer</highlight> passionate about building <highlight>modern, interactive, and responsive</highlight> web applications. I'm currently studying at Politeknik LP3I Jakarta, focusing on both front-end and back-end development to create <highlight>meaningful digital experiences</highlight>.",
+    "secondParagraph": "I’m deeply passionate about <highlight>continuous learning</highlight> and staying updated with the <highlight>latest technologies</highlight>. Each project I take on is a chance to explore <highlight>creative ideas</highlight>, sharpen my <highlight>technical skills</highlight>, and deliver <highlight>effective solutions</highlight> to real-word challenges in digital space.",
+    "thirdParagraph": "Beyond functionality, I also focus on <highlight>design and user experience (UI/UX)</highlight> to ensure every digital product I build is not only efficient but also <highlight>engaging and intuitive</highlight> to use. I believe technology is more than just a tool — it’s a <highlight>bridge between ideas and meaningful</highlight> impact for people.",
+    "subTitle": "Tech Stack"
+  },
+
+  "ContactSection": {
+    "title": "Lets Connect",
+    "firstDescription": "Let’s build something amazing together.",
+    "secondDescription": "Every great project starts with a simple conversation — let’s start ours."
+  }
+}

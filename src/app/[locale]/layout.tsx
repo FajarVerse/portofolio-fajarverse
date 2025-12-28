@@ -8,6 +8,7 @@ import {
   Overpass,
 } from "next/font/google";
 import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,7 +57,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${bebasNeue.variable} ${antonSc.variable} ${overpass.variable} antialiased`}
       >
-        {children}
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
