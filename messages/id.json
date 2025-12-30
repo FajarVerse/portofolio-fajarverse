@@ -13,6 +13,40 @@
     "subTitle": "Teknologi & Tools"
   },
 
+  "ProjectSection": {
+    "title": "Project Saya",
+    "projects": {
+      "lugiStore": {
+        "description": "Project ini merupakan website e-commerce fashion berbasis React dan Laravel yang terintegrasi dengan Midtrans sebagai sistem pembayaran, sehingga memungkinkan pengguna berbelanja produk fashion secara online dengan tampilan modern dan transaksi yang aman."
+      }
+    },
+    "btnLive": "Lihat",
+    "btnNotLive": "Belum tersedia",
+    "btnPrivateRepo": "Repositori privat"
+  },
+
+  "ExperienceSection": {
+    "title": "Perjalanan saya",
+    "description": "Momen penting dalam perjalanan saya di dunia teknologi, kreativitas, dan inovasi.",
+    "experience": {
+      "internshipDigitalHero": {
+        "time": "Maret – Juni 2025",
+        "title": "Software Engineer Internship",
+        "description": "Saya mengubah desain Figma menjadi antarmuka yang responsif, membangun komponen React.js yang dapat digunakan kembali, serta mengintegrasikan API eksternal. Saya juga berkontribusi dalam pengembangan Booking dan Admin Panel menggunakan React.js dan Tailwind CSS dengan kolaborasi berbasis Git."
+      },
+      "databaseCertification": {
+        "time": "25 Agustus 2025",
+        "title": "Sertifikasi Database Administrator",
+        "description": "Berhasil lulus sertifikasi Database Administrator dengan menyelesaikan tugas-tugas praktik pengelolaan basis data menggunakan SQL Server, termasuk penulisan query SQL, pemrosesan data, serta penerapan konsep manajemen basis data."
+      },
+      "bootcampMobileApp": {
+        "time": "26 Desember 2025",
+        "title": "AI Multi-platform App Developer Bootcamp",
+        "description": "Lulus dari bootcamp AI Multi-platform App Developer yang diselenggarakan oleh IDCamp (Indosat Ooredoo Hutchison Digital Camp), yang mencakup tiga kelas utama, yaitu Belajar Dasar AI, Memulai Pemrograman dengan Dart, dan Belajar Membuat Aplikasi Flutter untuk Pemula, dengan fokus pada pemahaman konsep dasar Artificial Intelligence serta pengembangan aplikasi mobile multiplatform menggunakan Flutter."
+      }
+    }
+  },
+
   "ContactSection": {
     "title": "Mari Terhubung",
     "firstDescription": "Mari wujudkan sesuatu yang luar biasa bersama.",

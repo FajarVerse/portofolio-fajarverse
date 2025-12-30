@@ -5,6 +5,7 @@ import {
   useTransform,
   motion,
 } from "motion/react";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -16,6 +17,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const t = useTranslations("ExperienceSection");
 
   useEffect(() => {
     if (ref.current) {
@@ -36,7 +38,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full bg-background font-sans" ref={containerRef}>
       <div className="max-w-7xl mx-auto mt-3 mb-1 lg:mt-5 xl:mt-6">
         <p className="text-primary text-sm md:text-base max-w-sm xl:text-xl xl:max-w-xl">
-          Highlights from my growth in tech, creativity, and innovation.
+          {t("description")}
         </p>
       </div>
 

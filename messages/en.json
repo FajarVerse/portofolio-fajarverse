@@ -13,6 +13,41 @@
     "subTitle": "Tech Stack"
   },
 
+  "ProjectSection": {
+    "title": "My Projects",
+    "projects": {
+      "lugiStore": {
+        "description": "This project is a React and Laravel based fashion e-commerce website integrated with Midtrans for payment system, allowing users to shop for fashion products online with a modern look and secure transactions."
+      }
+    },
+
+    "btnLive": "Live",
+    "btnNotLive": "Not available",
+    "btnPrivateRepo": "Repo is private"
+  },
+
+  "ExperienceSection": {
+    "title": "My Journey",
+    "description": "Highlights from my growth in tech, creativity, and innovation.",
+    "experience": {
+      "internshipDigitalHero": {
+        "time": "March – June 2025",
+        "title": "Software Engineer Internship",
+        "description": "I transformed Figma designs into responsive interfaces, built reusable React.js components, and integrated external APIs. I also contributed to the development of Booking and Admin Panels using React.js and Tailwind CSS with Git-based collaboration."
+      },
+      "databaseCertification": {
+        "time": "August 25, 2025",
+        "title": "Database Administrator Certification",
+        "description": "Successfully passed the Database Administrator certification by completing practical tasks on database management using SQL Server, including writing SQL queries, data processing, and applying database management concepts."
+      },
+      "bootcampMobileApp": {
+        "time": "December 26, 2025",
+        "title": "AI Multi-platform App Developer Bootcamp",
+        "description": "Graduated from the AI Multi-platform App Developer bootcamp organized by IDCamp (Indosat Ooredoo Hutchison Digital Camp), which included three main classes: Learning AI Basics, Starting Programming with Dart, and Learning to Create Flutter Applications for Beginners, with a focus on understanding fundamental AI concepts and developing multiplatform mobile applications using Flutter."
+      }
+    }
+  },
+
   "ContactSection": {
     "title": "Lets Connect",
     "firstDescription": "Let’s build something amazing together.",

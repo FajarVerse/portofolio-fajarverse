@@ -3,6 +3,7 @@
 import { Clock, Github, Play } from "lucide-react";
 import Link from "next/link";
 import BtnCard from "./btn-card";
+import { useTranslations } from "next-intl";
 
 interface CardProjectProps {
   children: React.ReactNode;
@@ -48,6 +49,8 @@ const CardRightContent = ({
   liveStatus,
   repoStatus,
 }: CardRightContent) => {
+  const t = useTranslations("ProjectSection");
+
   return (
     <>
       <div className="w-full lg:w-1/2 lg:flex lg:flex-col lg:justify-between">
@@ -79,13 +82,13 @@ const CardRightContent = ({
               <Link href={liveStatus ? liveUrl : "#"} target="_blank">
                 <BtnCard className="py-2 bg-primary text-background hover:bg-background hover:text-primary flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Play className="size-4 xl:size-5" />
-                  {liveStatus ? "Live" : "Not available"}
+                  {liveStatus ? t("btnLive") : t("btnNotLive")}
                 </BtnCard>
               </Link>
               <Link href={repoStatus ? repoUrl : "#"} target="_blank">
                 <BtnCard className="py-2 bg-background text-primary hover:bg-primary hover:text-background flex items-center justify-center gap-1.5 cursor-pointer md:py-2.5 lg:py-2 xl:py-2.5">
                   <Github className="size-4 xl:size-5" />
-                  {repoStatus ? "Github" : "Repo is private"}
+                  {repoStatus ? "Github" : t("btnPrivateRepo")}
                 </BtnCard>
               </Link>
             </div>

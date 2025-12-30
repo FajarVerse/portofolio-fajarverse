@@ -9,6 +9,7 @@ import experienceImag1 from "../../../public/image/experience/Gifari Fajar Maula
 import databaseAdministratorCertificateImg from "../../../public/image/experience/sertifikasi_database_administrator.png";
 import certificateAppMultiplatform1 from "../../../public/image/experience/sertifikat_AI_Multi-platform_App_Developer_Bootcamp_1.png";
 import certificateAppMultiplatform2 from "../../../public/image/experience/sertifikat_AI_Multi-platform_App_Developer_Bootcamp_2.png";
+import { useTranslations } from "next-intl";
 
 export type TimelineEntry = {
   title: string;
@@ -16,20 +17,19 @@ export type TimelineEntry = {
 };
 
 const ExperienceFragment = () => {
+  const t = useTranslations("ExperienceSection");
+
   const data: TimelineEntry[] = [
     {
-      title: "Maret - Juni 2025",
+      title: t("experience.internshipDigitalHero.time"),
       content: (
         <>
           <div>
             <h4 className="font-mono font-bold text-primary text-base md:text-lg lg:text-[1.2rem] xl:text-2xl">
-              Software Engineer Intrenship
+              {t("experience.internshipDigitalHero.title")}
             </h4>
             <p className="font-sans font-medium text-muted-foreground text-sm mt-1.5 lg:text-base xl:text-lg">
-              I transformed Figma designs into responsive interfaces, built
-              reusable React.js components, and integrated external APIs. I also
-              contributed to the development of Booking and Admin Panels using
-              React.js and Tailwind CSS with Git-based collaboration.
+              {t("experience.internshipDigitalHero.description")}
             </p>
             <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
@@ -44,18 +44,15 @@ const ExperienceFragment = () => {
     },
 
     {
-      title: "25 Agustus 2025",
+      title: t("experience.databaseCertification.time"),
       content: (
         <>
           <div>
             <h4 className="font-mono font-bold text-primary text-base md:text-lg lg:text-[1.2rem] xl:text-2xl">
-              Database Administrator Certification
+              {t("experience.databaseCertification.title")}
             </h4>
             <p className="font-sans font-medium text-muted-foreground text-sm mt-1.5 lg:text-base xl:text-lg">
-              Successfully pass the Database Administrator certification by
-              completing practical questions on database management using SQL
-              Server, including writing SQL queries, data processing, and
-              applying database management concepts.
+              {t("experience.databaseCertification.description")}
             </p>
             <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
@@ -70,21 +67,15 @@ const ExperienceFragment = () => {
     },
 
     {
-      title: "26 Desember 2025",
+      title: t("experience.bootcampMobileApp.time"),
       content: (
         <>
           <div>
             <h4 className="font-mono font-bold text-primary text-base md:text-lg lg:text-[1.2rem] xl:text-2xl">
-              AI Multi-platform App Developer Bootcamp
+              {t("experience.bootcampMobileApp.title")}
             </h4>
             <p className="font-sans font-medium text-muted-foreground text-sm mt-1.5 lg:text-base xl:text-lg">
-              Graduated from the AI ​​Multi-platform App Developer bootcamp
-              organized by IDCamp (Indosat Ooredoo Hutchison Digital Camp),
-              which includes three main classes, namely Learning AI Basics,
-              Starting Programming with Dart, and Learning to Create Flutter
-              Applications for Beginners, with a focus on understanding the
-              basic concepts of Artificial Intelligence and developing
-              multiplatform mobile applications using Flutter.
+              {t("experience.bootcampMobileApp.description")}
             </p>
             <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
@@ -107,7 +98,7 @@ const ExperienceFragment = () => {
   return (
     <AuthLayout className="pt-32" id="experience">
       <BlurFade inView={true} direction="down" offset={10} duration={0.5}>
-        <Header>My Journey</Header>
+        <Header>{t("title")}</Header>
       </BlurFade>
       <TimelineJourney data={data} />
     </AuthLayout>
