@@ -3,10 +3,14 @@
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import Image from "next/image";
 import Link from "next/link";
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import myLogo from "../../public/image/logo.png";
-import { TextAlignJustify, X } from "lucide-react";
+import { Languages, TextAlignJustify, X } from "lucide-react";
 import { TextAnimate } from "@/components/ui/text-animate";
+import { usePathname, useRouter } from "next/navigation";
+
+import { useLocale } from "next-intl";
+import { BtnLocalization } from "@/components/main/btn-localizaction";
 
 type MenuItem = {
   label: string;
@@ -16,6 +20,10 @@ type MenuItem = {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const navbarRef = useRef<HTMLElement | null>(null);
+  const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const [position, setPosition] = useState("bottom");
 
   const menuItems: MenuItem[] = [
     { label: "Home", url: "#home" },
@@ -24,6 +32,14 @@ const Navbar = () => {
     { label: "Experience", url: "#experience" },
     { label: "Contact", url: "#contact" },
   ];
+
+  const handleSwitchLocale = (nextLocale: string) => {
+    const segments = pathname.split("/");
+    segments[1] = nextLocale;
+
+    console.log("switching");
+    router.push(segments.join("/"));
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,8 +57,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
-
-  console.log(isOpen);
 
   return (
     <>
@@ -65,6 +79,7 @@ const Navbar = () => {
                 </li>
               </Link>
             ))}
+            <BtnLocalization />
             <AnimatedThemeToggler />
           </ul>
 
@@ -78,7 +93,7 @@ const Navbar = () => {
       </nav>
       <div
         className={`w-full fixed bg-background px-4 left-0 right-0 top-0 bottom-0 flex items-center justify-center ${
-          isOpen ? "visible opacity-100 z-[99]" : "invisible opacity-0 z-0"
+          isOpen ? "visible opacity-100 z-99" : "invisible opacity-0 z-0"
         } transition-all duration-300 ease-in-out lg:hidden`}
       >
         <X
@@ -101,6 +116,34 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
+        <div
+          className={`absolute bottom-12 flex gap-2 items-center md:bottom-14 md:gap-2.5 ${
+            isOpen ? "visible opacity-100" : "invisible opacity-0"
+          } transition-all duration-300 ease-in-out delay-75`}
+        >
+          <Languages className="size-5 md:size-7" />
+          <div className=" flex gap-2 items-center md:gap-3">
+            <button
+              className={`font-manrope font-semibold text-xl md:text-2xl ${
+                locale == "en" ? "text-primary" : "text-muted-foreground"
+              }`}
+              disabled={locale == "en" ? true : false}
+              onClick={() => handleSwitchLocale("en")}
+            >
+              English
+            </button>
+            <div className="h-7 w-[0.15rem] bg-primary rounded-full md:h-8" />
+            <button
+              className={`font-manrope font-semibold text-xl md:text-2xl ${
+                locale == "id" ? "text-primary" : "text-muted-foreground"
+              }`}
+              disabled={locale == "id" ? true : false}
+              onClick={() => handleSwitchLocale("id")}
+            >
+              Indonesia
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
