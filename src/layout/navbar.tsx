@@ -9,7 +9,7 @@ import { Languages, TextAlignJustify, X } from "lucide-react";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { usePathname, useRouter } from "next/navigation";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { BtnLocalization } from "@/components/main/btn-localizaction";
 
 type MenuItem = {
@@ -23,14 +23,14 @@ const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();
-  const [position, setPosition] = useState("bottom");
+  const t = useTranslations("NavbarMenu");
 
   const menuItems: MenuItem[] = [
-    { label: "Home", url: "#home" },
-    { label: "About", url: "#about" },
-    { label: "Projects", url: "#projects" },
-    { label: "Experience", url: "#experience" },
-    { label: "Contact", url: "#contact" },
+    { label: t("homeMenu"), url: "#home" },
+    { label: t("aboutMenu"), url: "#about" },
+    { label: t("projectMenu"), url: "#projects" },
+    { label: t("experienceMenu"), url: "#experience" },
+    { label: t("contactMenu"), url: "#contact" },
   ];
 
   const handleSwitchLocale = (nextLocale: string) => {

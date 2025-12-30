@@ -1,4 +1,13 @@
 {
+  "NavbarMenu": {
+    "homeMenu": "Beranda",
+    "aboutMenu": "Tentang",
+    "projectMenu": "Project",
+    "experienceMenu": "Pengalaman",
+    "contactMenu": "Kontak",
+    "languageTitle": "Bahasa"
+  },
+
   "HeroSection": {
     "tagLine": "Di mana ide bertemu inovasi — menciptakan produk digital yang fungsional, bernilai, dan berdampak jangka panjang..",
     "btnMyWork": "Eksplor karya saya",

@@ -1,4 +1,13 @@
 {
+  "NavbarMenu": {
+    "homeMenu": "Home",
+    "aboutMenu": "About",
+    "projectMenu": "Projects",
+    "experienceMenu": "Experience",
+    "contactMenu": "Contact",
+    "languageTitle": "Language"
+  },
+
   "HeroSection": {
     "tagLine": "Where ideas meet innovation — creating digital products that not only work, but provide long-term value and impact.",
     "btnMyWork": "See my works",

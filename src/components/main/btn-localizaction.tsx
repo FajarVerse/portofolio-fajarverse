@@ -1,7 +1,7 @@
 "use client";
 
 import { Languages } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 // import { usePathname, useRouter } from "next-intl/navigation";
 
 import {
@@ -19,6 +19,7 @@ export function BtnLocalization() {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const t = useTranslations("NavbarMenu");
 
   const handleSwitchLocale = (nextLocale: "en" | "id") => {
     if (nextLocale === locale) return;
@@ -33,8 +34,8 @@ export function BtnLocalization() {
         </button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Language</DropdownMenuLabel>
+      <DropdownMenuContent className="w-auto">
+        <DropdownMenuLabel>{t("languageTitle")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
 
         <DropdownMenuRadioGroup value={locale}>
