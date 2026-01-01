@@ -61,5 +61,10 @@
     "title": "Lets Connect",
     "firstDescription": "Let’s build something amazing together.",
     "secondDescription": "Every great project starts with a simple conversation — let’s start ours."
+  },
+
+  "Footer": {
+    "leftContent": "All Rights Reserved",
+    "rightContent": "Build with"
   }
 }
