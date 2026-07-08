@@ -56,6 +56,11 @@
         "time": "December 26, 2025",
         "title": "AI Multi-platform App Developer Bootcamp",
         "description": "Graduated from the AI Multi-platform App Developer bootcamp organized by IDCamp (Indosat Ooredoo Hutchison Digital Camp), which included three main classes: Learning AI Basics, Starting Programming with Dart, and Learning to Create Flutter Applications for Beginners, with a focus on understanding fundamental AI concepts and developing multiplatform mobile applications using Flutter."
+      },
+      "internshipHumanovation": {
+        "time": "January - March 2026",
+        "title": "Fullstack Developer Internship",
+        "description": "Completed a Fullstack Developer internship at PT Humanovation Technology Indonesia, where I developed the Hutendo Smart Hiring Management system. My responsibilities included building frontend and backend features, developing RESTful APIs, managing databases with Prisma ORM and MySQL, and creating responsive web interfaces using Next.js and Tailwind CSS."
       }
     }
   },
