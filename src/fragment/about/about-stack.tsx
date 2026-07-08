@@ -7,11 +7,18 @@ import { Marquee } from "@/components/ui/marquee";
 import { useTranslations } from "next-intl";
 import {
   siCss,
+  siExpress,
+  siGit,
+  siGithub,
   siHtml5,
   siJavascript,
   siLaravel,
   SimpleIcon,
   siMysql,
+  siNextdotjs,
+  siNodedotjs,
+  siPostman,
+  siPrisma,
   siReact,
   siTailwindcss,
   siTypescript,
@@ -50,9 +57,24 @@ const stacks: Stack[] = [
     icon: siTailwindcss,
   },
   {
+    name: "Node.js",
+    color: "#5FA04E",
+    icon: siNodedotjs,
+  },
+  {
     name: "React.js",
     color: "#61DAFB",
     icon: siReact,
+  },
+  {
+    name: "Next.js",
+    color: "#000000",
+    icon: siNextdotjs,
+  },
+  {
+    name: "Express.js",
+    color: "#0A0A0A",
+    icon: siExpress,
   },
   {
     name: "Laravel",
@@ -63,6 +85,26 @@ const stacks: Stack[] = [
     name: "MySQL",
     color: "#4479A1",
     icon: siMysql,
+  },
+  {
+    name: "Prisma ORM",
+    color: "#2D3748",
+    icon: siPrisma,
+  },
+  {
+    name: "Github",
+    color: "#181717",
+    icon: siGithub,
+  },
+  {
+    name: "Git",
+    color: "#F03C2E",
+    icon: siGit,
+  },
+  {
+    name: "Postman",
+    color: "#FF6C37",
+    icon: siPostman,
   },
 ];
 
@@ -75,7 +117,7 @@ const AboutStack = () => {
         <div className="w-full mt-3 lg:mt-5 xl:mt-8">
           <SubHeader>{t("subTitle")}</SubHeader>
           <div className="w-full mt-3 xl:mt-4 relative">
-            <Marquee pauseOnHover className="[--duration:5s]">
+            <Marquee pauseOnHover className="[--duration:10s]">
               {stacks.length > 0 &&
                 stacks.map((stack, i) => (
                   <CardStack
