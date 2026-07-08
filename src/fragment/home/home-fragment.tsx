@@ -48,7 +48,7 @@ const HomeFragment = () => {
             showCursor={false}
             className="relative before:block before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-1 before:bg-primary lg:tracking-wider"
           >
-            FULLSTACK
+            JUNIOR FULLSTACK
           </TypingAnimation>{" "}
           <TypingAnimation
             duration={500}
@@ -78,12 +78,12 @@ const HomeFragment = () => {
         <BlurFade inView={true} direction={"up"} duration={0.5} offset={10}>
           <div className="w-full flex gap-4 mt-10 md:gap-6 xl:gap-7 xl:mt-10">
             <Link href={"#projects"}>
-              <InteractiveHoverButton className="rounded-none border-1 border-primary xl:text-xl xl:px-10 xl:py-6 xl:border-2 bg-transparent">
+              <InteractiveHoverButton className="rounded-none border border-primary xl:text-xl xl:px-10 xl:py-6 xl:border-2 bg-transparent">
                 {t("btnMyWork")}
               </InteractiveHoverButton>
             </Link>
             <Link href={"#contact"}>
-              <InteractiveHoverButton className="rounded-none border-1 border-primary xl:text-xl xl:px-10 xl:py-6 xl:border-2 bg-transparent">
+              <InteractiveHoverButton className="rounded-none border border-primary xl:text-xl xl:px-10 xl:py-6 xl:border-2 bg-transparent">
                 {t("btnContact")}
               </InteractiveHoverButton>
             </Link>
