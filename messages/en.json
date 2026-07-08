@@ -27,6 +27,9 @@
     "projects": {
       "lugiStore": {
         "description": "This project is a React and Laravel based fashion e-commerce website integrated with Midtrans for payment system, allowing users to shop for fashion products online with a modern look and secure transactions."
+      },
+      "hutendoSmartHiringManagement": {
+        "description": "A web-based hiring management system developed for PT Humanovation Technology Indonesia, featuring candidate management, job positions, client requests, candidate placements, and role-based access control."
       }
     },
 
