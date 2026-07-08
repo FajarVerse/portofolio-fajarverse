@@ -27,6 +27,9 @@
     "projects": {
       "lugiStore": {
         "description": "Project ini merupakan website e-commerce fashion berbasis React dan Laravel yang terintegrasi dengan Midtrans sebagai sistem pembayaran, sehingga memungkinkan pengguna berbelanja produk fashion secara online dengan tampilan modern dan transaksi yang aman."
+      },
+      "hutendoSmartHiringManagement": {
+        "description": "Sistem manajemen rekrutmen berbasis web yang dikembangkan untuk PT Humanovation Technology Indonesia dengan fitur pengelolaan kandidat, posisi pekerjaan, permintaan klien, penempatan kandidat, dan kontrol akses berbasis peran."
       }
     },
     "btnLive": "Lihat",
@@ -52,6 +55,11 @@
         "time": "26 Desember 2025",
         "title": "AI Multi-platform App Developer Bootcamp",
         "description": "Lulus dari bootcamp AI Multi-platform App Developer yang diselenggarakan oleh IDCamp (Indosat Ooredoo Hutchison Digital Camp), yang mencakup tiga kelas utama, yaitu Belajar Dasar AI, Memulai Pemrograman dengan Dart, dan Belajar Membuat Aplikasi Flutter untuk Pemula, dengan fokus pada pemahaman konsep dasar Artificial Intelligence serta pengembangan aplikasi mobile multiplatform menggunakan Flutter."
+      },
+      "internshipHumanovation": {
+        "time": "Januari - Maret 2026",
+        "title": "Fullstack Developer Internship",
+        "description": "Menyelesaikan program magang sebagai Fullstack Developer di PT Humanovation Technology Indonesia dengan mengembangkan sistem Hutendo Smart Hiring Management. Bertanggung jawab mengembangkan frontend dan backend, membangun RESTful API, mengelola database menggunakan Prisma ORM dan MySQL, serta mengimplementasikan antarmuka web responsif menggunakan Next.js dan Tailwind CSS."
       }
     }
   },

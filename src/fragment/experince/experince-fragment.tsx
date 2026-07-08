@@ -9,6 +9,7 @@ import experienceImag1 from "../../../public/image/experience/Gifari Fajar Maula
 import databaseAdministratorCertificateImg from "../../../public/image/experience/sertifikasi_database_administrator.png";
 import certificateAppMultiplatform1 from "../../../public/image/experience/sertifikat_AI_Multi-platform_App_Developer_Bootcamp_1.png";
 import certificateAppMultiplatform2 from "../../../public/image/experience/sertifikat_AI_Multi-platform_App_Developer_Bootcamp_2.png";
+import certificateHutendo from "../../../public/image/experience/Gifari Fajar Maulana_PT_Humanovation_Technology_Indonesia.png";
 import { useTranslations } from "next-intl";
 
 export type TimelineEntry = {
@@ -34,7 +35,7 @@ const ExperienceFragment = () => {
             <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
                 src={experienceImag1}
-                alt={"Sertifikat Digital Hero"}
+                alt={"experience.internshipDigitalHero.title"}
                 className="w-full h-44 bg-primary xl:h-44 2xl:h-52 border-2 border-muted-foreground"
               />
             </div>
@@ -57,7 +58,7 @@ const ExperienceFragment = () => {
             <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
                 src={databaseAdministratorCertificateImg}
-                alt={"Sertifikat Digital Hero"}
+                alt={"experience.databaseCertification.title"}
                 className="w-full h-auto bg-primary xl:h-auto 2xl:h-auto border-2 border-muted-foreground"
               />
             </div>
@@ -80,12 +81,35 @@ const ExperienceFragment = () => {
             <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
               <Image
                 src={certificateAppMultiplatform1}
-                alt={"Sertifikat Digital Hero"}
+                alt={"experience.bootcampMobileApp.title"}
                 className="w-full h-44 bg-primary xl:h-44 2xl:h-52 border-2 border-muted-foreground"
               />
               <Image
                 src={certificateAppMultiplatform2}
-                alt={"Sertifikat Digital Hero"}
+                alt={"experience.bootcampMobileApp.title"}
+                className="w-full h-44 bg-primary xl:h-44 2xl:h-52 border-2 border-muted-foreground"
+              />
+            </div>
+          </div>
+        </>
+      ),
+    },
+
+    {
+      title: t("experience.internshipHumanovation.time"),
+      content: (
+        <>
+          <div>
+            <h4 className="font-mono font-bold text-primary text-base md:text-lg lg:text-[1.2rem] xl:text-2xl">
+              {t("experience.internshipHumanovation.title")}
+            </h4>
+            <p className="font-sans font-medium text-muted-foreground text-sm mt-1.5 lg:text-base xl:text-lg">
+              {t("experience.internshipHumanovation.description")}
+            </p>
+            <div className="w-full grid grid-cols-1 gap-2.5 mt-3 md:grid-cols-2 lg:mt-5 lg:gap-3.5 xl:gap-4 xl:mt-6">
+              <Image
+                src={certificateHutendo}
+                alt={"experience.internshipHumanovation.title"}
                 className="w-full h-44 bg-primary xl:h-44 2xl:h-52 border-2 border-muted-foreground"
               />
             </div>
