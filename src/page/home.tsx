@@ -1,4 +1,4 @@
-import HomeFragment from "@/fragment/home-fragment";
+import HomeFragment from "@/fragment/home/home-fragment";
 
 const Home = () => {
   return <HomeFragment />;

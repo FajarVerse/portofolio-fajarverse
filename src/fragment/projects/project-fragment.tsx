@@ -4,6 +4,7 @@ import CardProject from "@/components/main/cart-project";
 import Header from "@/components/main/header";
 import AuthLayout from "@/layout/auth-layout";
 import project1 from "../../../public/image/projects/project-1.png";
+import project2 from "../../../public/image/projects/project-2.png";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { useTranslations } from "next-intl";
 
@@ -20,7 +21,29 @@ const projects = [
     liveStatus: false,
     repoStatus: true,
     description:
-      "This project is a React and Laravel based fashion e-commerce website integrated with Midtrans for payment system, allowing users to shop for fashion products online with a modern look and secure transactions.",
+      "A web-based recruitment management application developed to support recruitment and outsourcing processes at PT Humanovation Technology Indonesia. The system provides features for candidate management, job position management, client requests, candidate placements, and role-based access control, enabling a more structured and efficient hiring process.",
+  },
+  {
+    id: 2,
+    key: "hutendoSmartHiringManagement",
+    title: "Hutendo Smart Hiring Management",
+    stacks: [
+      "Next.js",
+      "Express.js",
+      "TypeScript",
+      "Prisma ORM",
+      "MySQL",
+      "Tailwind CSS",
+      "JWT",
+    ],
+    liveUrl: null,
+    repoUrl: null,
+    status: true,
+    image: project2.src,
+    liveStatus: false,
+    repoStatus: false,
+    description:
+      "A fullstack web-based hiring management system developed during my internship at PT Humanovation Technology Indonesia. The application streamlines recruitment and outsourcing processes through candidate management, job positions, client requests, candidate placements, and role-based access control, providing an efficient solution for end-to-end hiring workflows.",
   },
 ];
 
